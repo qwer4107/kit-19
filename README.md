@@ -36,6 +36,28 @@ To demonstrate the effectiveness of KIT-19, we have fine-tuned representative Ko
 
 The experimental results affirm that **models trained with KIT-19 significantly outperform existing Korean LLMs**, highlighting the potency and necessity of instruction datasets crafted specifically for the Korean language.
 
+# Benchmark Performance
+
+Below is the performance comparison of different models on various benchmark datasets. The models trained with KIT-19 (KIT-5.8b and KIT-1.3b) are compared against Polyglot-Ko-1.3b, Polyglot-Ko-5.8b, KoAlpaca-5.8b, and Kullm-polyglot-5.8b-v2.
+
+| Benchmark Dataset        | Metric      | Polyglot-ko-1.3b | Polyglot-ko-5.8b | KoAlpaca-5.8B | kullm-polyglot-5.8b-v2 | KIT-5.8b       | KIT-1.3b       |
+|--------------------------|-------------|------------------|------------------|---------------|------------------------|----------------|----------------|
+| KoBEST\_COPA             | ACC         | 72.00%           | 77.60%           | 69.80%        | 76.60%                 | **91.60%**     | 83.80%         |
+|                          | F1 (macro)  | 71.96%           | 77.55%           | 69.77%        | 76.53%                 | **91.59%**     | 83.78%         |
+| KoBEST\_BoolQ            | ACC         | 49.86%           | 53.63%           | 56.34%        | 50.28%                 | **66.24%**     | 50.71%         |
+|                          | F1 (macro)  | 35.52%           | 43.56%           | 50.64%        | 33.71%                 | **66.14%**     | 34.78%         |
+| KoBEST\_HellaSwag        | ACC         | 40.60%           | 48.80%           | 38.20%        | 44.40%                 | **97.60%**     | 81.60%         |
+|                          | ACC\_Norm   | 53.00%           | 59.80%           | 46.20%        | 55.20%                 | **98.20%**     | 89.80%         |
+|                          | F1 (macro)  | 40.13%           | 48.53%           | 38.15%        | 44.25%                 | **97.61%**     | 81.49%         |
+| KLUE\_STS                | ACC         | 42.39%           | 45.28%           | 51.83%        | 42.39%                 | **65.51%**     | 42.20%         |
+|                          | F1          | 59.54%           | 60.34%           | 33.86%        | 59.54%                 | **69.71%**     | 56.52%         |
+| KoBEST\_SentiNeg         | ACC         | 69.27%           | 50.38%           | 38.79%        | 50.38%                 | 71.54%         | **80.86%**     |
+|                          | F1          | 68.19%           | 33.95%           | 38.48%        | 33.50%                 | 68.98%         | **80.86%**     |
+| KLUE\_YNAT               | F1          | 33.24%           | 33.62%           | 20.91%        | 32.20%                 | 28.15%         | **38.34%**     |
+
+*Bold* results indicate the best performance in each category.
+```
+
 ## Conclusion and Future Work
 
 KIT-19 stands as a pivotal development in the Korean NLP landscape, addressing the critical need for comprehensive instruction datasets that encapsulate the linguistic and cultural intricacies of the Korean language. With KIT-19, we aim to push the boundaries of what's possible with Korean LLMs, laying a solid foundation for future advancements in the field.
