@@ -56,7 +56,6 @@ Below is the performance comparison of different models on various benchmark dat
 | KLUE\_YNAT               | F1          | 33.24%           | 33.62%           | 20.91%        | 32.20%                 | 28.15%         | **38.34%**     |
 
 *Bold* results indicate the best performance in each category.
-```
 
 ## Conclusion and Future Work
 
