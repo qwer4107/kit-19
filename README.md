@@ -1,5 +1,18 @@
 # KIT-19: A Comprehensive Korean Instruction Toolkit on 19 Tasks for Fine-Tuning Korean Large Language Models
 
+## Access to KIT-19 on Huggingface
+
+For ease of access and to facilitate research and development, the KIT-19 dataset and the fine-tuned models are also hosted on Huggingface. Please use the following links to explore and utilize these resources:
+
+### KIT-19 Dataset 🤗
+- [KIT-19 Instruction Dataset](https://huggingface.co/datasets/Junmai/kit-19-instruction-100000)
+
+### Fine-tuned Models 🤗
+- [KIT-1.3b Model](https://huggingface.co/Junmai/KIT-1.3b)
+- [KIT-5.8b Model](https://huggingface.co/Junmai/KIT-5.8b)
+
+These resources are available for the community to further Korean NLP research and applications. We encourage their use in your projects and research endeavors.
+
 ## Introduction
 
 In the current landscape of language models, achieving high performance in Korean NLP tasks requires specialized instruction datasets tailored to the unique aspects of the Korean language. To address the scarcity of such datasets, we introduce **KIT-19**, a comprehensive Korean Instruction Toolkit that encompasses 19 distinct tasks for fine-tuning Korean Large Language Models (LLMs). Unlike existing datasets that largely rely on translated instructions or outputs from models like ChatGPT, KIT-19 is meticulously crafted to capture the nuances of Korean language and culture, offering a robust foundation for advancing Korean LLMs.
